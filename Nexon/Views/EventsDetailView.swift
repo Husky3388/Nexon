@@ -35,6 +35,6 @@ struct EventsDetailView: View {
 
 struct EventsDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        EventsDetailView(event: Event(id: "1", title: "[UPDATE] Announcement", date: Calendar.current.date(from: DateComponents(year: 2020, month: 5, day: 26, hour: 22, minute: 54, second: 57)), image: "announcement", description: "The Mini Pets have retired and will no longer be available for purchase. Check out the details below."))
+        EventsDetailView(event: TestData.mabinogi_event1)
     }
 }

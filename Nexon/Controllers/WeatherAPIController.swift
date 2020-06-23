@@ -26,7 +26,6 @@ public class WeatherAPIController: ObservableObject {
                         do {
                             let results = try decoder.decode(WeatherAPI.self, from: safeData)
                             DispatchQueue.main.async {
-                                //                                self.weathers = results
                                 var wxList:[Int] = [] // declare this higher as a published var then set to empty here
                                 for i in 1...13{ // iterates through 13 types
                                     let type = "type\(i)"
@@ -47,24 +46,6 @@ public class WeatherAPIController: ObservableObject {
             }
             task.resume()
         }
-        //        let url = URL(string: "https://mabi.world/api/forecast/")!
-        //
-        //        URLSession.shared.dataTask(with: url) {(data,response,error) in
-        //            do {
-        //                if let d = data {
-        //                    let decodedLists = try JSONDecoder().decode(WeatherAPI.self, from: d)
-        //                    DispatchQueue.main.async {
-        //                        print(decodedLists)
-        ////                        self.weathers.append(contentsOf: decodedLists)
-        //                        self.weathers = decodedLists
-        //                    }
-        //                }else {
-        //                    print("No Data")
-        //                }
-        //            } catch {
-        //                print (error)
-        //            }
-        //        }.resume()
     }
     
     func loadWeatherPatterns() {

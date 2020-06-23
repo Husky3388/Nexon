@@ -9,6 +9,13 @@
 import Foundation
 import SwiftUI
 
+func goToEventsView(_ events: [Event]) {
+    if let window = UIApplication.shared.windows.first {
+        window.rootViewController = UIHostingController(rootView: EventsView(events: events))
+        window.makeKeyAndVisible()
+    }
+}
+
 func goToContentView() {
     if let window = UIApplication.shared.windows.first {
         window.rootViewController = UIHostingController(rootView: ContentView())

@@ -17,7 +17,7 @@
 		79461BAB2494888E005DD1A6 /* EventsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79461BAA2494888E005DD1A6 /* EventsModel.swift */; };
 		7953F24C24933AAB00203556 /* EventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7953F24B24933AAB00203556 /* EventsView.swift */; };
 		79580AEE2497329700CE179A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79580AED2497329700CE179A /* SettingsView.swift */; };
-		79580AF12497357400CE179A /* NavigationBarFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79580AF02497357400CE179A /* NavigationBarFunctions.swift */; };
+		79580AF12497357400CE179A /* NavigationFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79580AF02497357400CE179A /* NavigationFunctions.swift */; };
 		795CB632249573A2000668FD /* EventsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795CB631249573A2000668FD /* EventsDetailView.swift */; };
 		7960C14A24997829000BC24F /* WeatherAPIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7960C14924997829000BC24F /* WeatherAPIController.swift */; };
 		797C6CC924909AFE006B53BD /* GameData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797C6CC824909AFE006B53BD /* GameData.swift */; };
@@ -25,6 +25,7 @@
 		798B50D42498229900425D00 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798B50D32498229900425D00 /* MenuView.swift */; };
 		799061ED2499751F0053DBF3 /* WeatherAPIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799061EC2499751F0053DBF3 /* WeatherAPIView.swift */; };
 		799061EF2499755B0053DBF3 /* WeatherAPIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799061EE2499755B0053DBF3 /* WeatherAPIModel.swift */; };
+		799A9C8124A2B99B00104C1E /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799A9C8024A2B99B00104C1E /* TestData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,7 +41,7 @@
 		79461BAA2494888E005DD1A6 /* EventsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsModel.swift; sourceTree = "<group>"; };
 		7953F24B24933AAB00203556 /* EventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsView.swift; sourceTree = "<group>"; };
 		79580AED2497329700CE179A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		79580AF02497357400CE179A /* NavigationBarFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarFunctions.swift; sourceTree = "<group>"; };
+		79580AF02497357400CE179A /* NavigationFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationFunctions.swift; sourceTree = "<group>"; };
 		795CB631249573A2000668FD /* EventsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsDetailView.swift; sourceTree = "<group>"; };
 		7960C14924997829000BC24F /* WeatherAPIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAPIController.swift; sourceTree = "<group>"; };
 		797C6CC824909AFE006B53BD /* GameData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameData.swift; sourceTree = "<group>"; };
@@ -48,6 +49,7 @@
 		798B50D32498229900425D00 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		799061EC2499751F0053DBF3 /* WeatherAPIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAPIView.swift; sourceTree = "<group>"; };
 		799061EE2499755B0053DBF3 /* WeatherAPIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAPIModel.swift; sourceTree = "<group>"; };
+		799A9C8024A2B99B00104C1E /* TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,10 +84,10 @@
 			children = (
 				793256502490945D00383AE0 /* AppDelegate.swift */,
 				793256522490945D00383AE0 /* SceneDelegate.swift */,
-				79580AEF2497352100CE179A /* Functions */,
 				797C6CC7249099DC006B53BD /* Models */,
 				797C6CCA24909B8D006B53BD /* Views */,
 				7960C148249977F2000BC24F /* Controllers */,
+				799A9C7F24A2B97400104C1E /* Test Data */,
 				793256562490946000383AE0 /* Assets.xcassets */,
 				7932565B2490946000383AE0 /* LaunchScreen.storyboard */,
 				7932565E2490946000383AE0 /* Info.plist */,
@@ -102,17 +104,10 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		79580AEF2497352100CE179A /* Functions */ = {
-			isa = PBXGroup;
-			children = (
-				79580AF02497357400CE179A /* NavigationBarFunctions.swift */,
-			);
-			path = Functions;
-			sourceTree = "<group>";
-		};
 		7960C148249977F2000BC24F /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				79580AF02497357400CE179A /* NavigationFunctions.swift */,
 				7960C14924997829000BC24F /* WeatherAPIController.swift */,
 			);
 			path = Controllers;
@@ -121,9 +116,9 @@
 		797C6CC7249099DC006B53BD /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				79461BAA2494888E005DD1A6 /* EventsModel.swift */,
 				797C6CC824909AFE006B53BD /* GameData.swift */,
 				790945452490A26F008B65A8 /* NexonManager.swift */,
-				79461BAA2494888E005DD1A6 /* EventsModel.swift */,
 				799061EE2499755B0053DBF3 /* WeatherAPIModel.swift */,
 			);
 			path = Models;
@@ -136,11 +131,19 @@
 				797C6CCB24909C5B006B53BD /* DetailView.swift */,
 				7953F24B24933AAB00203556 /* EventsView.swift */,
 				795CB631249573A2000668FD /* EventsDetailView.swift */,
-				79580AED2497329700CE179A /* SettingsView.swift */,
 				798B50D32498229900425D00 /* MenuView.swift */,
+				79580AED2497329700CE179A /* SettingsView.swift */,
 				799061EC2499751F0053DBF3 /* WeatherAPIView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		799A9C7F24A2B97400104C1E /* Test Data */ = {
+			isa = PBXGroup;
+			children = (
+				799A9C8024A2B99B00104C1E /* TestData.swift */,
+			);
+			path = "Test Data";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,6 +220,7 @@
 				79461BAB2494888E005DD1A6 /* EventsModel.swift in Sources */,
 				799061ED2499751F0053DBF3 /* WeatherAPIView.swift in Sources */,
 				798B50D42498229900425D00 /* MenuView.swift in Sources */,
+				799A9C8124A2B99B00104C1E /* TestData.swift in Sources */,
 				793256512490945D00383AE0 /* AppDelegate.swift in Sources */,
 				797C6CC924909AFE006B53BD /* GameData.swift in Sources */,
 				790945462490A26F008B65A8 /* NexonManager.swift in Sources */,
@@ -224,7 +228,7 @@
 				799061EF2499755B0053DBF3 /* WeatherAPIModel.swift in Sources */,
 				79580AEE2497329700CE179A /* SettingsView.swift in Sources */,
 				793256532490945D00383AE0 /* SceneDelegate.swift in Sources */,
-				79580AF12497357400CE179A /* NavigationBarFunctions.swift in Sources */,
+				79580AF12497357400CE179A /* NavigationFunctions.swift in Sources */,
 				797C6CCC24909C5B006B53BD /* DetailView.swift in Sources */,
 				793256552490945D00383AE0 /* ContentView.swift in Sources */,
 				7960C14A24997829000BC24F /* WeatherAPIController.swift in Sources */,

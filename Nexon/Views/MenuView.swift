@@ -10,23 +10,7 @@ import SwiftUI
 
 struct MenuView: View {
     
-    //    @ObservedObject var weatherAPIController = WeatherAPIController()
-    
     var body: some View {
-        //            List {
-        //                Button(action: {
-        //                    goToContentView()
-        //                }) {
-        //                    Text("Nexon Page")
-        //                }
-        //                Button(action: {
-        //                    print(self.weatherAPIController.weathers)
-        ////                    goToWeatherAPIView()
-        //                }) {
-        //                    Text("Weather API")
-        //                }
-        //            }
-        
         VStack(alignment: .leading) {
             HStack {
                 Image(systemName: "circle.fill")
@@ -38,16 +22,6 @@ struct MenuView: View {
             }
             .padding(.top, 100)
             HStack {
-                //                Button(action: {
-                //                    goToWeatherAPIView()
-                //                }) {
-                //                    Image(systemName: "gear")
-                //                        .foregroundColor(.gray)
-                //                        .imageScale(.large)
-                //                    Text("Weather API")
-                //                        .foregroundColor(.gray)
-                //                        .font(.headline)
-                //                }
                 NavigationLink(destination: WeatherAPIView()) {
                     Image(systemName: "gear")
                         .foregroundColor(.gray)

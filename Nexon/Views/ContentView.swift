@@ -8,31 +8,26 @@
 
 import SwiftUI
 
-//let coloredNavAppearance = UINavigationBarAppearance()
-
 struct ContentView: View {
-    
-//    init() {
-//        coloredNavAppearance.configureWithOpaqueBackground()
-//        coloredNavAppearance.backgroundColor = UIColor(named: "ColorMode")
-//        coloredNavAppearance.titleTextAttributes = [.foregroundColor: UIColor(named: "ColorModeText")!]
-//        coloredNavAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor(named: "ColorModeText")!]
-//
-////        UINavigationBar.appearance().standardAppearance = coloredNavAppearance
-////        UINavigationBar.appearance().scrollEdgeAppearance = coloredNavAppearance
-//    }
     
     @ObservedObject var nexonManager = NexonManager()
     
     var body: some View {
         NavigationView {
-            List(nexonManager.games) { game in
-                NavigationLink(destination: DetailView(game: game)) {
-                    Image(game.icon)
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 50, height: 50, alignment: .center)
-                    Text(game.title)
+            List {
+                Section(header: Text("PC Games")) {
+                    ForEach(nexonManager.games) { game in
+                        NavigationLink(destination: DetailView(game: game)) {
+                            Image(game.icon)
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 50, height: 50, alignment: .center)
+                            Text(game.title)
+                        }
+                    }
+                }
+                Section(header: Text("Mobile Games")) {
+                    Text("")
                 }
             }
             .navigationBarTitle("Nexon")

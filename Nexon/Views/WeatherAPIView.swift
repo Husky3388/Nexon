@@ -26,7 +26,6 @@ struct WeatherAPIView: View {
                     HStack {
                         Text(forecast.0)
                         Spacer()
-//                        Text(forecast.1)
                         Image(systemName: forecast.1)
                     }
                 }
